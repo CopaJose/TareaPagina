@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    /*ocupa el 100% de la pantaña del navegador*/
+    background-image: url('adrien-olichon-2M_DMVrt444-unsplash.jpg');
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.grid-container{
+    color: white;
+    display: grid;/*el display es como se muestra en el navegador, el grid es una forma de maquetacion para ordenar los elementos de la pagina*/
+    grid-template:/*trabaja en la dispocicion de los elementos, nececita de las areas para poder realizar la maquetacion*/
+    "header header header" 100px /*define la altura de la primera fila*/
+    "aside article aside2" auto /*auto se refiere que ocupe la toda la altura sobrante*/
+    "footer footer footer" 50px/ 
+    /*con la barra inclinada "/" le damos a enterder que ahora trabajaremos con el tamaño de las columnas */
+    250px auto 250px
+    ;
+    .header{
+        grid-area: header;/*definimos el nombre de la area, puede tener cualquier nombre*/
+    } 
+    .aside{
+        grid-area: aside;
+        
+    }
+    .article{
+        grid-area: article;
+    }
+    .aside2{
+        grid-area: aside2;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}
+.oswald,a{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 8px;
+            
+
+  color: rgba(255, 255, 255, 1);
+text-align: center;
+font-size: 85px;
+text-decoration:underline 6px;
+text-underline-offset: 17px; 
+
+margin-top: 15%;
+margin-bottom: 0;
+}
+.oswald,a:hover{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 8px white;
+}
+.oswald,a:not(:hover) {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 0;
+}
+
+.medio{
+    text-align: center;
+}
+
+.parrafo{
+    display: inline-block;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 8px;
+
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    font-size: 25px;
+    margin-left: 30px;
+    
+}
+.estudiante{
+    text-align: right;
+}
